@@ -1,5 +1,9 @@
 **Personal Activity Project**
 
+At first it needs to install **backend** and **frontend** subprojects:
+
+> git submodule init
+
 _Frontend:_
 
 > **build:**
