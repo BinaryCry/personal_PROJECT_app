@@ -47,4 +47,4 @@ At first it needs to install **backend** and **frontend** subprojects:
 
 `npm run watch-ts`
 
-## **Also [Adminer](localhost:5000) will be able to use after docker-compose starting**
+## **Also Adminer (DB management) will be able to use on [localhost:5000](localhost:5000) after docker-compose was starting**
