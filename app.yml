@@ -1,0 +1,48 @@
+version: "3"
+
+services:
+  backend:
+    restart: always
+    container_name: app
+    build: ./backend
+    #ports:
+      #- "3000:3000"
+    volumes:
+      - ./backend:/app
+    networks:
+      - webnet
+    env_file:
+      - db.env
+  nginx:
+    restart: always
+    container_name: web
+    build: ./nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./backend/static:/static
+      - ./frontend/build:/frontend
+    networks:
+      - webnet
+  db:
+    restart: always
+    image: "postgres:11"
+    container_name: pg
+    #ports:
+      #- "5432:5432"
+    volumes:
+      - ./db:/var/lib/postgresql/data
+    networks:
+      - webnet
+    env_file:
+      - db.env
+  adminer:
+    restart: always
+    image: adminer
+    container_name: adm
+    ports:
+      - 5000:8080
+    networks:
+      - webnet
+networks:
+  webnet:

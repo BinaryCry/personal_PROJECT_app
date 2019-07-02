@@ -1,0 +1,7 @@
+[submodule "backend"]
+  path = backend
+  url = git@github.com:BinaryCry/personal_PROJECT_backend.git
+
+[submodule "frontend"]
+  path = frontend
+  url = git@github.com:BinaryCry/person_PROJECT_frontend.git
