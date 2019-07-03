@@ -1,0 +1,22 @@
+{
+  "react_component": {
+    "scope": "typescriptreact",
+    "prefix": "tsx_component",
+    "description": "basic React TypeScript Component",
+    "body": [
+      "import * as React from \"react\";",
+      "import { IProps, IState } from \"./interface\";",
+      "import * as style from \"./style.scss\";\n",
+      "export default class ComponentName extends React.Component<IProps, IState> {",
+      "\tconstructor(props: IProps) {",
+      "\t\tsuper(props);",
+      "\t\tthis.state = {};",
+      "\t}\n",
+      "\tcomponentDidMount() {}\n",
+      "\trender() {",
+      "\t\treturn <div />;",
+      "\t}",
+      "}\n"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "react_container": {
+    "scope": "typescriptreact",
+    "prefix": "tsx_component",
+    "description": "basic React TypeScript Container",
+    "body": [
+      "import Component from \"components\";",
+      "import { connect } from \"react-redux\";",
+      "import { Dispatch } from \"redux\";",
+      "import { IStore } from \"store\";",
+      "import {  } from \"actions\";\n",
+      "const mapStateToProps = (state: IStore) => ({});\n",
+      "const mapDispatchToProps = (dispatch: Dispatch) => ({});\n",
+      "export default connect(",
+      "\tmapStateToProps,",
+      "\tmapDispatchToProps",
+      ")(Component);\n"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "component_interface": {
+    "scope": "typescript",
+    "prefix": "tsx_interface",
+    "body": [
+      "export interface IProps {\n",
+      "}\n",
+      "export interface IState {\n",
+      "}\n"
+    ],
+    "description": "IProps, IState"
+  }
+}
